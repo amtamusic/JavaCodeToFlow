@@ -1,0 +1,26 @@
+.boundry
+{
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    border: dotted #ccc 2px;
+}
+
+.if {
+    width: 100px;
+    height: 100px;
+    color: rgba(0, 0, 0, 0.87);
+    cursor: move;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background:transparent;
+    border-radius: 4px;
+    margin-right: 25px;
+    position: relative;
+    z-index: 1;
+    box-sizing: border-box;
+    padding: 10px;
+  }
+  

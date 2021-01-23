@@ -1,0 +1,20 @@
+
+    .diamond {
+        border: 50px solid transparent;
+        border-bottom-color:dodgerblue;
+        position: relative;
+        top: -50px;
+      }
+      
+      .diamond:after {
+        content: '';
+        position: absolute;
+        left: -50px;
+        top: 50px;
+        border: 50px solid transparent;
+        border-top-color: dodgerblue;
+      }
+
+      .diamond:active{
+        opacity: 0.8;
+      }

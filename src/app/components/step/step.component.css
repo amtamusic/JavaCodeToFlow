@@ -1,0 +1,8 @@
+
+    .square {
+        background-color: dodgerblue;
+      }
+
+      .square:active{
+        opacity: 0.8;
+      }

@@ -1,0 +1,30 @@
+<!-- <app-if [width]="0" 
+[height]="0" 
+[left]="0" 
+[top]="0"></app-if> -->
+<div class="boundry" >
+    <app-if class="if" cdkDragBoundary=".boundry" 
+    [style.width.px]="ifWidth"
+    [style.height.px]="ifHeight"
+    [width]="0" 
+    [height]="0" 
+    [left]="0" 
+    [top]="0" cdkDrag></app-if>
+
+    <app-if class="if" cdkDragBoundary=".boundry" 
+    [style.width.px]="ifWidth"
+    [style.height.px]="ifHeight"
+    [width]="0" 
+    [height]="0" 
+    [left]="0" 
+    [top]="0" cdkDrag></app-if>
+
+    <app-step class="if" cdkDragBoundary=".boundry" 
+    [style.width.px]="stepWidth"
+    [style.height.px]="stepHeight"
+    [width]="stepWidth" 
+    [height]="stepHeight" 
+    [left]="0" 
+    [top]="0" cdkDrag></app-step>
+    
+</div>
