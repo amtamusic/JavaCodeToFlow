@@ -11,6 +11,7 @@ export class StepComponent implements OnInit {
   @Input('height') public height: number;
   @Input('left') public left: number;
   @Input('top') public top: number;
+  @Input('text') public text: string;
 
   constructor() { }
 

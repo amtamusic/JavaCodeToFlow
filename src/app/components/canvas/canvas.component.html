@@ -2,29 +2,26 @@
 [height]="0" 
 [left]="0" 
 [top]="0"></app-if> -->
+<div>
+    <input type="button" value="Analyze" (click)="analyze()">
+</div>
 <div class="boundry" >
-    <app-if class="if" cdkDragBoundary=".boundry" 
+    <app-if *ngFor="let ifShape of ifShapes;i as index;" class="if" cdkDragBoundary=".boundry" 
     [style.width.px]="ifWidth"
     [style.height.px]="ifHeight"
     [width]="0" 
     [height]="0" 
     [left]="0" 
+    [text]="ifShape.text"
     [top]="0" cdkDrag></app-if>
 
-    <app-if class="if" cdkDragBoundary=".boundry" 
-    [style.width.px]="ifWidth"
-    [style.height.px]="ifHeight"
-    [width]="0" 
-    [height]="0" 
-    [left]="0" 
-    [top]="0" cdkDrag></app-if>
-
-    <app-step class="if" cdkDragBoundary=".boundry" 
+    <app-step *ngFor="let stepShape of stepShapes;i as index;" class="if" cdkDragBoundary=".boundry" 
     [style.width.px]="stepWidth"
     [style.height.px]="stepHeight"
     [width]="stepWidth" 
     [height]="stepHeight" 
     [left]="0" 
+    [text]="stepShape.text"
     [top]="0" cdkDrag></app-step>
     
 </div>

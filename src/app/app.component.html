@@ -1,8 +1,13 @@
-<div>
-<app-canvas class="canv" 
-[ifWidth]="200" 
-[ifHeight]="200" 
-[stepWidth]="200" 
-[stepHeight]="100" 
-cdkDrop></app-canvas>
+<div class="row">
+    <div class="flex-grow align-items-stretch col-lg-3 col-md-3 col-sm-12">
+         <textarea [(ngModel)]="editorText" type="text" class="code-edit" cols="100000" (keyup)="printText()"></textarea>
+    </div>
+    <app-canvas class="flex-grow col-lg-9 col-md-9 col-sm-12"
+        [ifWidth]="200" 
+        [ifHeight]="200" 
+        [stepWidth]="200" 
+        [stepHeight]="100" 
+        [editorText]="editorText"
+        cdkDrop>
+    </app-canvas>
 </div>
